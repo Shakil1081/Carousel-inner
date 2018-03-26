@@ -6,6 +6,12 @@
 
 */	
 $args = array( 'post_type' => 'storie','posts_per_page' => '20');
+/* Befor use it change your filter
+'post_type' => 'storie',
+'posts_per_page' => '20'
+*/
+
+
 $the_query = new WP_Query($args);
 if ($the_query->have_posts()) :
 $counter = 0;
