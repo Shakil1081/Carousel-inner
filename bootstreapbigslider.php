@@ -2,8 +2,18 @@
 									
 									<!-- Begin Carousel-->
 
-<?php $meta_element_class = get_post_meta($post->ID, 'custom_element_grid_class_meta_box', true);
-$args = array( 'category_nicename' =>$meta_element_class,'posts_per_page' => '4');
+<?php 
+
+
+$args = array( 'category_nicename' =>"",'posts_per_page' => '4');
+
+/* Befor use it change your filter
+'post_type' => 'storie',
+'category_nicename' =>"",
+'posts_per_page' => '4'
+'posts_per_page' => '20'
+*/
+
 $the_query = new WP_Query ( $args );
 ?>
 		<div id="carouselBlog" class="carousel slide" data-ride="carousel">
